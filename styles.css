@@ -1,0 +1,21 @@
+
+
+/*menu*/
+header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("imagens/menu-desktop.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10%;
+    white-space: nowrap;
+}
