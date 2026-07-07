@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+}
+
 .logo {
     width: 100%;
     padding-top: 30%;
@@ -7,10 +11,78 @@
     background-image: url("imagens/menu-desktop.jpg");
 }
 
+ul.menu {
+    background-color: #5a1488;
+    display: flex;
+    justify-content: space-around;
+    white-space: nowrap;
+    padding-bottom: 3%;
+}
+
+li a{
+    background-color: #5a1488;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.menu-ico {
+    display: none;
+    width: 30px;
+    height: 22px;
+    position: relative;
+    cursor: pointer;
+}
+.menu-ico::before,
+.menu-ico::after,
+.menu-ico span {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: aliceblue;
+    border-radius: 2px;
+}
+.menu-ico::before {
+    top: 0;
+}
+.menu-ico span {
+    top: 9px;
+}
+.menu-ico::after {
+    bottom: 0;
+}
+#menu-checkbox {
+    position: absolute;
+    opacity: 0;
+}
+
+/*menu de navegacao*/
+header {
+    display: flex;
+    background-color: #5a1488;
+    color:aliceblue;
+    flex-direction: column;
+}
+
 /*estilos para celulares */
 @media (max-width: 480px) {
+    /*menu*/
     .logo {
         background-image: url("imagens/menu-celular.jpg");
+    }
+    .menu-ico {
+        display: block;
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        gap: 10%;
+        background: #fff;
+    }
+    #menu-checkbox:checked ~ .menu {
+        display: flex;
     }
 }
 
@@ -26,14 +98,4 @@
     .logo {
         background-image: url("imagens/menu-desktop.jpg");
     }
-}
-
-header {
-    display: flex;
-    background-color: #5a1488;
-    color:aliceblue;
-}
-
-li a{
-    color: aliceblue;
 }
