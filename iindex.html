@@ -8,7 +8,12 @@
 </head>
 <body>
     <header>
-        <div class="logo"></div>
+        <img
+            src="imagens/menu-celular.jpg"
+            srcset="imagens/menu-celular.jpg 480w,
+                    imagens/menu-tablet.jpg 768w,
+                    imagens/menu-desktop.jpg 1024w"
+            alt="Banner da Agencia Criativa Web">
         <!--menu de navegacao-->
         <nav>
             <input type="checkbox" id="menu-checkbox">
@@ -55,9 +60,12 @@
         </section>
         
         <section id="servicos">
+            <div class="titulo">
             <h2>Serviços</h2>
             <p>Oferecemos uma ampla gama de serviços para ajudar sua marca a se destacar no mundo digital.</p>
+            </div>
             <br>
+            <div class="desingGrafico">
             <h3>Design Grafico</h3>
             <ul>
                 <li>Criação de identidades visuais.</li>
@@ -66,7 +74,9 @@
                 <li>Layouts profissionais para campanhas e anúncios.</li>
                 <li>Direção de arte e composição visual.</li>
             </ul>
+            </div>
             
+            <div class="desenvolvimento">
             <h3>Desenvolvimento Web</h3>
             <ul>
                 <li>Criação de sites modernos, rápidos e responsivos.</li>
@@ -75,7 +85,9 @@
                 <li>Integração com sistemas e ferramentas externas.</li>
                 <li>Manutenção, otimização e melhorias contínuas.</li>
             </ul>
+            </div>
     
+            <div class="branding">
             <h3>Branding</h3>
             <ul>
                 <li>Construção e fortalecimento de marcas.</li>
@@ -84,13 +96,16 @@
                 <li>Estratégias de posicionamento e diferenciação.</li>
                 <li>Rebranding e evolução de marcas existentes.</li>
             </ul>
+            </div>
         </section>
         
         <section id="depoimentos">
             <h2>Depoimentos</h2>
             <p>Veja o que nossos clientes dizem sobre nós:</p>
             
-            <div class="depoimentos">
+            <div class="conteinerDepoimento">
+
+            <div class="depoimento">
                 <h3>Mariana Duarte — Empreendedora</h3>
                 <p>"A equipe da agência superou todas as minhas expectativas.
                     Eles entenderam exatamente o que eu precisava e transformaram minha marca em algo profissional e cheio de personalidade.
@@ -98,26 +113,29 @@
                     Recomendo de olhos fechados."</p>
             </div>
             
-            <div class="depoimentos">
+            <div class="depoimento">
                 <h3>Rafael Moreira — Diretor de Marketing</h3>
                 <p>"Trabalhar com essa agência foi um divisor de águas para nossa presença digital.
                     O branding ficou impecável e o design das campanhas trouxe um aumento real no engajamento.
                     Eles são criativos, organizados e entregam tudo com uma qualidade acima da média."</p>
             </div>
             
-            <div class="depoimentos">
+            <div class="depoimento">
                 <h3>Camila Ferreira — Proprietária de Loja Online</h3>
                 <p>"Eu precisava de uma identidade visual forte e um site que realmente convertesse.
                     A agência entregou exatamente isso. O atendimento é excelente, o processo é transparente e o resultado final ficou incrível.
                     Meu negócio ganhou outra vida."</p>
             </div>
+
+            </div>
+
         </section>
         
         <section id="contatos">
             <h3>Contate-nos</h3>
             <p>Estamos prontos para transformar sua ideia em realidade. Entre em contato conosco e vamos criar algo incrível juntos!</p>
             
-            <form action="enviar.php" method="post">
+            <form type="subimt">
                 <label for="nome">Diga seu nome:</label>
                 <input type="text" id="nome" name="nome" required>
                 <br>
