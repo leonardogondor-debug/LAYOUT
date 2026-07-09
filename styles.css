@@ -10,7 +10,7 @@ h3 {
 }
 
 /*menu*/
-ul.menu {
+.header__menu {
     display: none;
     justify-content: space-around;
     white-space: nowrap;
@@ -24,16 +24,15 @@ li a{
     font-size: 1.2rem;
 }
 
-.menu-ico {
+.header__menu--ico {
     display: none;
     width: 30px;
     height: 30px;
     position: relative;
     cursor: pointer;
 }
-.menu-ico::before,
-.menu-ico::after,
-.menu-ico span {
+.header__menu--ico::before,
+.header__menu--ico::after {
     content: "";
     position: absolute;
     left: 0;
@@ -42,22 +41,34 @@ li a{
     background: aliceblue;
     border-radius: 2px;
 }
-.menu-ico::before {
+.menu--linhas {
+    position: absolute;
+    left: 0;
+    top: 13px;
+    width: 100%;
+    height: 4px;
+    background: aliceblue;
+    border-radius: 2px;
+    display: block;
+}
+.header__menu--ico::before {
+    content: "";
     top: 4px;
 }
-.menu-ico span {
+.menu--linhas {
     top: 13px;
 }
-.menu-ico::after {
+.header__menu--ico::after {
+    content: "";
     bottom: 4px;
 }
-#menu-checkbox {
+.header__checkbox {
     position: absolute;
     opacity: 0;
 }
 
 /*cabesalio*/
-header {
+.header {
     display: flex;
     background-color: #5a1488;
     color:aliceblue;
@@ -187,19 +198,19 @@ button:active {
 /*estilos para celulares */
 @media (max-width: 480px) {
     /*menu*/
-    .menu-ico {
+    .header__menu--ico {
         display: block;
     }
-    ul.menu {
+    .header__menu {
         display: none;
         flex-direction: column;
         gap: 10%;
         background: #fff;
     }
-    #menu-checkbox:checked ~ .menu {
+    .header__checkbox:checked ~ .header__menu {
         display: flex;
     }
-    ul.menu li a {
+    .header__menu li a {
     display: block;
     padding: 15px 20px;
     border: 2px solid black;
@@ -243,12 +254,12 @@ button:active {
 /*estilos para tablets*/
 @media (min-width: 481px) and (max-width: 768px) {
     /*menu*/
-    ul.menu {
+    .header__menu {
         display: flex;
         justify-content: space-around;
         background-color: #5a1488;
     }
-    .menu-ico {
+    .header__menu--ico {
         display: none;
     }
 }
@@ -256,7 +267,7 @@ button:active {
 /*estilos para desktop*/
 @media (min-width: 1024px) {
     /*menu*/
-    ul.menu {
+    .header__menu {
         display: flex;
     }
 
