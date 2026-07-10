@@ -2,7 +2,7 @@
 * {
     margin: 0;
 }
-body {
+.pagina {
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 h3 {
@@ -218,34 +218,28 @@ button:active {
     }
 
     /*secao servicos*/
-    #servicos {
+    .servicos {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, auto);
-    gap: 1rem;
-    }
-    .titulo {
-    grid-column: 1;
-    grid-row: 1;
-    text-align: center;
     gap: 2rem;
     }
-    .subTitulo {
-    grid-column: 1;
-    grid-row: 2;
+    .servicos__titulo {
     text-align: center;
-    max-width: 100%;
+    }
+    .servicos__subTitulo {
+    text-align: center;
+    max-width: 60ch;
     margin: 0 auto;
     }
-    .desingGrafico {
+    .servicos__grupo--desing {
     grid-column: 1;
     grid-row: 4;
     }
-    .desenvolvimento {
+    .servico__grupo--desenvolver {
     grid-column: 1;
     grid-row: 5;
     }
-    .branding {
+    .servicos__grupo--branding {
     grid-column: 1;
     grid-row: 3;
     }

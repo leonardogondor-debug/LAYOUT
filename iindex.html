@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>Agência Criativa Web</title>
 </head>
-<body>
+<body class="pagina">
     <header class="header" >
         <img
             src="imagens/menu-celular.jpg"
@@ -18,12 +18,12 @@
         <nav>
             <input type="checkbox" id="menu-checkbox" class="header__checkbox">
             <label for="menu-checkbox" class="header__menu--ico"><span class="menu--linhas"></span></label>
-            <ul class="header__menu">
-                <li><a href="#casa">Casa</a></li>
-                <li><a href="#sobre">Sobre nos</a></li>
-                <li><a href="#servicos">Servicos</a></li>
-                <li><a href="#depoimentos">Depoimentos</a></li>
-                <li><a href="#contatos">Contatos</a></li>
+            <ul class="header__menu-lista">
+                <li class="header__menu-item--roxo"><a class="header__menu-link" href="#casa">Casa</a></li>
+                <li class="header__menu-item--roxo"><a class="header__menu-link" href="#sobre">Sobre nos</a></li>
+                <li class="header__menu-item--roxo" ><a class="header__menu-link" href="#servicos">Servicos</a></li>
+                <li class="header__menu-item--roxo"><a class="header__menu-link" href="#depoimentos">Depoimentos</a></li>
+                <li class="header__menu-item--roxo"><a class="header__menu-link" href="#contatos">Contatos</a></li>
             </ul>
         </nav>
     </header>
@@ -59,12 +59,11 @@
             </ul>
         </section>
         
-        <section id="servicos">
-            <h2 class="titulo">Serviços</h2>
-            <p class="subTitulo">Oferecemos uma ampla gama de serviços para ajudar sua marca a se destacar no mundo digital.</p>
-            <br>
-            <div class="desingGrafico">
-            <h3>Design Grafico</h3>
+        <section id="servicos" class="servicos">
+            <h2 class="servicos__titulo">Serviços</h2>
+            <p class="servicos__subTitulo">Oferecemos uma ampla gama de serviços para ajudar sua marca a se destacar no mundo digital.</p>
+            <div class="servicos__grupo--desing">
+            <h3 class="servicos__grupo-titulo">Design Grafico</h3>
             <ul>
                 <li>Criação de identidades visuais.</li>
                 <li>Artes para redes sociais.</li>
@@ -74,7 +73,7 @@
             </ul>
             </div>
             
-            <div class="desenvolvimento">
+            <div class="servico__grupo--desenvolver">
             <h3>Desenvolvimento Web</h3>
             <ul>
                 <li>Criação de sites modernos, rápidos e responsivos.</li>
@@ -85,7 +84,7 @@
             </ul>
             </div>
     
-            <div class="branding">
+            <div class="servicos__grupo--branding">
             <h3>Branding</h3>
             <ul>
                 <li>Construção e fortalecimento de marcas.</li>
