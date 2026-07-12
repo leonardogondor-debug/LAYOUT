@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>Agência Criativa Web</title>
 </head>
-<body>
+<body class="pagina">
     <header class="header" >
         <img
             src="imagens/menu-celular.jpg"
@@ -17,19 +17,19 @@
         <!--menu de navegacao-->
         <nav>
             <input type="checkbox" id="menu-checkbox" class="header__checkbox">
-            <label for="menu-checkbox" class="header__menu--ico"><span class="menu--linhas"></span></label>
+            <label for="menu-checkbox" class="header__menu-ico"><span class="header__menu--linhas"></span></label>
             <ul class="header__menu">
-                <li><a href="#casa">Casa</a></li>
-                <li><a href="#sobre">Sobre nos</a></li>
-                <li><a href="#servicos">Servicos</a></li>
-                <li><a href="#depoimentos">Depoimentos</a></li>
-                <li><a href="#contatos">Contatos</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#casa">Casa</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#sobre">Sobre nos</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#servicos">Servicos</a></li>
+                <li class="header__menu-item" ><a class="header__menu-link" href="#depoimentos">Depoimentos</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#contatos">Contatos</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="casa">
+    <main class="main">
+        <section id="casa" class="section">
             <h2>Transformamos ideia em experiencias memoraveis</h2>
             <p>Agencia criativa especializada em desing, tecnologia e estrategia para marcas que querem se destacar no mundo digitals</p>
             
@@ -43,7 +43,7 @@
             <a href="#contatos">Vamos criar algo juntos</a>
         </section>
         
-        <section id="sobre">
+        <section id="sobre" class="section">
             <h2>Sobre Nós</h2>
             <p>Somos uma agência criativa especializada em transformar marcas em experiências digitais marcantes.
             Unimos estratégia, design e tecnologia para desenvolver soluções que conectam pessoas, fortalecem identidades e impulsionam resultados.
@@ -59,11 +59,11 @@
             </ul>
         </section>
         
-        <section id="servicos">
-            <h2 class="titulo">Serviços</h2>
-            <p class="subTitulo">Oferecemos uma ampla gama de serviços para ajudar sua marca a se destacar no mundo digital.</p>
+        <section id="servicos" class="section servicos">
+            <h2 class="servicos__titulo">Serviços</h2>
+            <p class="servicos__subTitulo">Oferecemos uma ampla gama de serviços para ajudar sua marca a se destacar no mundo digital.</p>
             <br>
-            <div class="desingGrafico">
+            <div class="servicos__design servicos__cards--borda-roxa">
             <h3>Design Grafico</h3>
             <ul>
                 <li>Criação de identidades visuais.</li>
@@ -74,7 +74,7 @@
             </ul>
             </div>
             
-            <div class="desenvolvimento">
+            <div class="servicos__desenvolvimento servicos__cards--borda-roxa">
             <h3>Desenvolvimento Web</h3>
             <ul>
                 <li>Criação de sites modernos, rápidos e responsivos.</li>
@@ -85,7 +85,7 @@
             </ul>
             </div>
     
-            <div class="branding">
+            <div class="servicos__branding servicos__cards--borda-roxa">
             <h3>Branding</h3>
             <ul>
                 <li>Construção e fortalecimento de marcas.</li>
@@ -97,13 +97,13 @@
             </div>
         </section>
         
-        <section id="depoimentos">
+        <section id="depoimentos" class="section depoimentos">
             <h2>Depoimentos</h2>
             <p>Veja o que nossos clientes dizem sobre nós:</p>
             
-            <div class="conteinerDepoimento">
+            <div class="depoimentos__lista">
 
-            <div class="depoimento">
+            <div class="depoimentos__item">
                 <h3>Mariana Duarte — Empreendedora</h3>
                 <p>"A equipe da agência superou todas as minhas expectativas.
                     Eles entenderam exatamente o que eu precisava e transformaram minha marca em algo profissional e cheio de personalidade.
@@ -111,14 +111,14 @@
                     Recomendo de olhos fechados."</p>
             </div>
             
-            <div class="depoimento">
+            <div class="depoimentos__item">
                 <h3>Rafael Moreira — Diretor de Marketing</h3>
                 <p>"Trabalhar com essa agência foi um divisor de águas para nossa presença digital.
                     O branding ficou impecável e o design das campanhas trouxe um aumento real no engajamento.
                     Eles são criativos, organizados e entregam tudo com uma qualidade acima da média."</p>
             </div>
             
-            <div class="depoimento">
+            <div class="depoimentos__item">
                 <h3>Camila Ferreira — Proprietária de Loja Online</h3>
                 <p>"Eu precisava de uma identidade visual forte e um site que realmente convertesse.
                     A agência entregou exatamente isso. O atendimento é excelente, o processo é transparente e o resultado final ficou incrível.
@@ -129,23 +129,23 @@
 
         </section>
         
-        <section id="contatos">
-            <h3>Contate-nos</h3>
+        <section id="contatos" class="section contatos">
+            <h2>Contate-nos</h2>
             <p>Estamos prontos para transformar sua ideia em realidade. Entre em contato conosco e vamos criar algo incrível juntos!</p>
             
-            <form action="/enviar" method="post">
+            <form action="/enviar" method="post" class="form form--fundo-roxo">
                 <label for="nome">Diga seu nome:</label>
-                <input type="text" id="nome" name="nome" required>
+                <input type="text" id="nome" name="nome" class="form__input" required>
                 <br>
                 <label for="email">Digite seu email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" class="form__input" required>
                 <br>
                 <label for="numero">Digite seu numero:(opcional)</label>
-                <input type="tel" id="numero" name="numero">
+                <input type="tel" id="numero" name="numero" class="form__input">
                 <br>
                 <label for="mensagem">Digite sua mensagem:</label>
-                <textarea maxlength="200" id="mensagem" name="mensagem" required></textarea>
-                <button type="submit">Enviar</button>
+                <textarea maxlength="200" id="mensagem" name="mensagem" class="form__textarea" required></textarea>
+                <button type="submit" class="form__btn form__btn--verde-claro form__btn--verde-agua form__btn--verde-dark">Enviar</button>
              </form>
              
              <h3>Telefone</h3>
