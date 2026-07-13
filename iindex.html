@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="styles.css">
     <title>Agência Criativa Web</title>
 </head>
-<body class="pagina">
-    <header class="header" >
+<body class="layout">
+    <header class="header u-flex" >
         <img
             src="imagens/menu-celular.jpg"
             srcset="imagens/menu-celular.jpg 480w,
@@ -28,28 +28,28 @@
         </nav>
     </header>
 
-    <main class="main">
-        <section id="casa" class="section">
-            <h2>Transformamos ideia em experiencias memoraveis</h2>
-            <p>Agencia criativa especializada em desing, tecnologia e estrategia para marcas que querem se destacar no mundo digitals</p>
+    <main class="layout__main u-flex">
+        <section id="casa" class="section u-flex">
+            <h2 class="u-text-center">Transformamos ideia em experiencias memoraveis</h2>
+            <p class="u-text-center">Agencia criativa especializada em desing, tecnologia e estrategia para marcas que querem se destacar no mundo digitals</p>
             
-            <ul class="diferencial">
+            <ul>
                 <li><strong>Desing inteligente</strong> que conecta estetica e funcionalidade</li>
                 <li><strong>Experiencias digitais imersivas</strong> focadas no usuario</li>
                 <li><strong>Estrategias personalizadas</strong> para acelerar resultados</li>
                 <li><strong>Tecnologia moderna</strong> para sites rapidos e responsivos</li>
             </ul>
             
-            <a href="#contatos">Vamos criar algo juntos</a>
+            <a href="#contatos" class="u-text-center">Vamos criar algo juntos</a>
         </section>
         
-        <section id="sobre" class="section">
-            <h2>Sobre Nós</h2>
-            <p>Somos uma agência criativa especializada em transformar marcas em experiências digitais marcantes.
+        <section id="sobre" class="section u-flex">
+            <h2 class="u-text-center">Sobre Nós</h2>
+            <p class="u-text-center">Somos uma agência criativa especializada em transformar marcas em experiências digitais marcantes.
             Unimos estratégia, design e tecnologia para desenvolver soluções que conectam pessoas, fortalecem identidades e impulsionam resultados.
             Nosso foco é criar projetos modernos, funcionais e visualmente impactantes, sempre alinhados aos objetivos e à essência de cada cliente.</p>
             
-            <h2>Nossos Valores</h2>
+            <h2 class="u-text-center">Nossos Valores</h2>
             <ul class="valores">
                 <li><strong>Criatividade com proposito</strong>-cada ideia nasce para resolver, melhorar ou transformar.</li>
                 <li><strong>Experiencia do usuario em primeiro lugar</strong>-design pensado para pessoas, nao apenas para telas.</li>
@@ -59,12 +59,12 @@
             </ul>
         </section>
         
-        <section id="servicos" class="section servicos">
+        <section id="servicos" class="section servicos u-grid ">
             <h2 class="servicos__titulo">Serviços</h2>
-            <p class="servicos__subTitulo">Oferecemos uma ampla gama de serviços para ajudar sua marca a se destacar no mundo digital.</p>
+            <p class="servicos__subTitulo u-text-center ">Oferecemos uma ampla gama de serviços para ajudar sua marca a se destacar no mundo digital.</p>
             <br>
-            <div class="servicos__design servicos__cards--borda-roxa">
-            <h3>Design Grafico</h3>
+            <div class="servicos__design u-card-borda-roxa">
+            <h3 class="u-text-center u-pb">Design Grafico</h3>
             <ul>
                 <li>Criação de identidades visuais.</li>
                 <li>Artes para redes sociais.</li>
@@ -74,8 +74,8 @@
             </ul>
             </div>
             
-            <div class="servicos__desenvolvimento servicos__cards--borda-roxa">
-            <h3>Desenvolvimento Web</h3>
+            <div class="servicos__desenvolvimento u-card-borda-roxa">
+            <h3 class="u-text-center u-pb">Desenvolvimento Web</h3>
             <ul>
                 <li>Criação de sites modernos, rápidos e responsivos.</li>
                 <li>Landing pages otimizadas para conversão.</li>
@@ -85,8 +85,8 @@
             </ul>
             </div>
     
-            <div class="servicos__branding servicos__cards--borda-roxa">
-            <h3>Branding</h3>
+            <div class="servicos__branding u-card-borda-roxa">
+            <h3 class="u-text-center u-pb">Branding</h3>
             <ul>
                 <li>Construção e fortalecimento de marcas.</li>
                 <li>Desenvolvimento de propósito, voz e personalidade.</li>
@@ -97,30 +97,30 @@
             </div>
         </section>
         
-        <section id="depoimentos" class="section depoimentos">
-            <h2>Depoimentos</h2>
-            <p>Veja o que nossos clientes dizem sobre nós:</p>
+        <section id="depoimentos" class="section u-flex">
+            <h2 class="u-text-center">Depoimentos</h2>
+            <p class="u-text-center">Veja o que nossos clientes dizem sobre nós:</p>
             
             <div class="depoimentos__lista">
 
-            <div class="depoimentos__item">
-                <h3>Mariana Duarte — Empreendedora</h3>
-                <p>"A equipe da agência superou todas as minhas expectativas.
+            <div class="depoimentos__item u-card-borda-roxa">
+                <h3 class="u-text-center u-pb">Mariana Duarte — Empreendedora</h3>
+                <p class="u-text-center">"A equipe da agência superou todas as minhas expectativas.
                     Eles entenderam exatamente o que eu precisava e transformaram minha marca em algo profissional e cheio de personalidade.
                     O site ficou rápido, moderno e muito fácil de navegar.
                     Recomendo de olhos fechados."</p>
             </div>
             
-            <div class="depoimentos__item">
-                <h3>Rafael Moreira — Diretor de Marketing</h3>
-                <p>"Trabalhar com essa agência foi um divisor de águas para nossa presença digital.
+            <div class="depoimentos__item u-card-borda-roxa ">
+                <h3 class="u-text-center u-pb">Rafael Moreira — Diretor de Marketing</h3>
+                <p class="u-text-center">"Trabalhar com essa agência foi um divisor de águas para nossa presença digital.
                     O branding ficou impecável e o design das campanhas trouxe um aumento real no engajamento.
                     Eles são criativos, organizados e entregam tudo com uma qualidade acima da média."</p>
             </div>
             
-            <div class="depoimentos__item">
-                <h3>Camila Ferreira — Proprietária de Loja Online</h3>
-                <p>"Eu precisava de uma identidade visual forte e um site que realmente convertesse.
+            <div class="depoimentos__item u-card-borda-roxa">
+                <h3 class="u-text-center u-pb" >Camila Ferreira — Proprietária de Loja Online</h3>
+                <p class="u-text-center">"Eu precisava de uma identidade visual forte e um site que realmente convertesse.
                     A agência entregou exatamente isso. O atendimento é excelente, o processo é transparente e o resultado final ficou incrível.
                     Meu negócio ganhou outra vida."</p>
             </div>
@@ -129,11 +129,11 @@
 
         </section>
         
-        <section id="contatos" class="section contatos">
-            <h2>Contate-nos</h2>
-            <p>Estamos prontos para transformar sua ideia em realidade. Entre em contato conosco e vamos criar algo incrível juntos!</p>
+        <section id="contatos" class="section contatos u-flex">
+            <h2 class="u-text-center">Contate-nos</h2>
+            <p class="u-text-center">Estamos prontos para transformar sua ideia em realidade. Entre em contato conosco e vamos criar algo incrível juntos!</p>
             
-            <form action="/enviar" method="post" class="form form--fundo-roxo">
+            <form action="/enviar" method="post" class="form form--fundo-roxo u-text-center u-card-borda-roxa u-flex">
                 <label for="nome">Diga seu nome:</label>
                 <input type="text" id="nome" name="nome" class="form__input" required>
                 <br>
@@ -148,12 +148,12 @@
                 <button type="submit" class="form__btn form__btn--verde-claro form__btn--verde-agua form__btn--verde-dark">Enviar</button>
              </form>
              
-             <h3>Telefone</h3>
-             <p><strong>(51) 3456‑7890</strong></p>
-             <h3>E-mail</h3>
-             <p><strong>contato@agenciacriativa.com.br</strong></p>
-             <h3>Endereço</h3>
-             <p><strong>Av. Horizonte Criativo, 1280 Bairro Centro Torres – RS, Brasil CEP 95560‑000</strong></p>
+             <h3 class="u-text-center">Telefone</h3>
+             <p class="u-text-center"><strong>(51) 3456‑7890</strong></p>
+             <h3 class="u-text-center">E-mail</h3>
+             <p class="u-text-center"><strong>contato@agenciacriativa.com.br</strong></p>
+             <h3 class="u-text-center">Endereço</h3>
+             <p class="u-text-center"><strong>Av. Horizonte Criativo, 1280 Bairro Centro Torres – RS, Brasil CEP 95560‑000</strong></p>
         </section>
     </main>
     
